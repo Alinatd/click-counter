@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>click count</title>
+</head>
+<body>
+<div class="container">
+
+    <h1>Кнопка считает касания в+</h1>
+
+<button class="knop" id="btn" onclick="increase()"></button>
+<br>
+<br>
+<br>
+<h1>Кнопка считает касания в-</h1>
+<button class="knop" id="btn2" onclick="decrease()"></button>
+</div>
+<script>
+
+    let value1 = 0;
+    let value2 = 0;
+    let btn =  document.getElementById('btn');
+let btn2 = document.getElementById('btn2');
+
+    function increase() {
+value1++;
+btn.innerText = value1;
+}
+
+
+function decrease() {
+    value2--;
+    btn2.innerText = value2;
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
